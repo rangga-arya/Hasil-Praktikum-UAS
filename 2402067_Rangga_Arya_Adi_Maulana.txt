@@ -1,0 +1,86 @@
+===========================================================
+HASIL SCAN NMAP
+Nama : Rangga Arya Adi Maulana
+NIM  : (2402067)
+Target : www.kemenag.go.id
+===========================================================
+
+C:\Users\LENOVO>nmap www.kemenag.go.id
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-21
+Nmap scan report for www.kemenag.go.id (103.7.13.243)
+Host is up.
+Not shown: 999 closed tcp ports (reset)
+
+PORT    STATE SERVICE
+53/tcp  open  domain
+
+Nmap done: 1 IP address (1 host up) scanned.
+
+===========================================================
+
+C:\Users\LENOVO>nmap -sV www.kemenag.go.id
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-21
+Nmap scan report for www.kemenag.go.id (103.7.13.243)
+Host is up.
+
+PORT      STATE SERVICE      VERSION
+53/tcp    open  domain       Generic DNS Response (NXDOMAIN)
+465/tcp   open  tcpwrapped
+1046/tcp  open  tcpwrapped
+1069/tcp  open  tcpwrapped
+1092/tcp  open  tcpwrapped
+3030/tcp  open  tcpwrapped
+3369/tcp  open  tcpwrapped
+3945/tcp  open  tcpwrapped
+6112/tcp  open  tcpwrapped
+6502/tcp  open  tcpwrapped
+8082/tcp  open  tcpwrapped
+8194/tcp  open  tcpwrapped
+52822/tcp open  tcpwrapped
+
+Service detection performed.
+
+===========================================================
+
+C:\Users\LENOVO>nmap -O www.kemenag.go.id
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-21
+Nmap scan report for www.kemenag.go.id (103.7.13.243)
+Host is up.
+
+OS fingerprint not ideal because: Didn't receive UDP response.
+No OS matches for host.
+
+Nmap done.
+
+===========================================================
+
+C:\Users\LENOVO>nmap -Pn -p 80,443 www.kemenag.go.id
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-21
+Nmap scan report for www.kemenag.go.id (103.7.13.243)
+Host is up.
+
+PORT    STATE  SERVICE
+80/tcp  closed http
+443/tcp closed https
+
+Nmap done.
+
+===========================================================
+
+C:\Users\LENOVO>nmap -Pn -p 80,443 103.7.13.243
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-21
+Nmap scan report for 103.7.13.243
+Host is up.
+
+PORT    STATE  SERVICE
+80/tcp  closed http
+443/tcp closed https
+
+Nmap done.
+
+===========================================================
